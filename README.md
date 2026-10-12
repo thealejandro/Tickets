@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+# Tickets (HNSC)
 
-You can use the [editor on GitHub](https://github.com/TheAlejandRo/Tickets/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Primer prototipo (noviembre de 2018) de un sistema de tickets de turno para las clínicas del Hospital Nuestra Señora del Carmen (Cobán, Alta Verapaz), hecho en VB.NET con WPF.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Contexto
 
-### Markdown
+- Año: 2018.
+- Proyecto de estudiante y punto de partida de [Hospital-Repair](https://github.com/thealejandro/Hospital-Repair) (2018) y [HospitalNSC](https://github.com/thealejandro/HospitalNSC) (2019).
+- Es una prueba de concepto de interfaz: no tiene lógica de negocio real.
+- Proyecto histórico, sin mantenimiento. Lo conservo como registro de mi trayectoria; la versión actual de esta idea son xaCare y xaSeguros, en https://xacode.dev.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Funcionalidades observadas en el código
 
-```markdown
-Syntax highlighted code block
+- Ventana de inicio de sesión con tres usuarios fijos en el código, cada uno abre una ventana de prueba distinta.
+- `Base`: maqueta de ticket con código de paciente y clínica del doctor.
+- `Mod2`: maqueta para el doctor con botones "Siguiente" y "Marcar como ocupado".
+- `Mod3`: maqueta de ajustes.
+- Prueba de conexión a MySQL (base `hnsc`) al cargar la ventana principal.
 
-# Header 1
-## Header 2
-### Header 3
+## Tecnologías
 
-- Bulleted
-- List
+- VB.NET, WPF, .NET Framework 4.6.1.
+- MaterialDesignThemes 2.5, MySql.Data 8.0.13, CefSharp (referenciado, sin uso).
 
-1. Numbered
-2. List
+## Cómo abrirlo
 
-**Bold** and _Italic_ and `Code` text
+Abrir `HNSC/HNSC.sln` en Visual Studio 2017 o superior y restaurar los paquetes NuGet.
 
-[Link](url) and ![Image](src)
-```
+El archivo `_config.yml` es un remanente de GitHub Pages y no forma parte del proyecto.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Estado
 
-### Jekyll Themes
+Proyecto histórico, sin mantenimiento.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TheAlejandRo/Tickets/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Licencia
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+GPL-2.0 (ver `LICENSE`).
